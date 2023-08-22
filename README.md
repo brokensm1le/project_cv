@@ -45,23 +45,23 @@
   ```
   python3 client/client.py get -f Data_Africa.csv
   ```
-- Получения данных из файла с каким-то фильтром:
+Получения данных из файла с каким-то фильтром:
   ```
   python3 client/client.py get -f Data_Africa.csv -fi 'Year < 2003' -fi 'Country == "Republic of the Congo"'
   ```
-- Получение данных из файла с сортировкой:
+Получение данных из файла с сортировкой:
   ```
   python3 client/client.py get -f Data_Africa.csv -s 'GDP (USD)'
   ````
-- Уделение все файлов:
+Уделение все файлов:
   ```
   python3 client/client.py delete
   ```
-- Удаление конкретного файла:
+Удаление конкретного файла:
   ```
   python3 client/client.py delete -f Data_Africa.csv
   ```
-- Получение информации о вводе данных:
+Получение информации о вводе данных:
   ```
   python3 client/client.py -h
   ```
