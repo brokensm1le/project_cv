@@ -30,8 +30,8 @@
 
 ### Работа с сервисом
 Для отправки запросов можно использовать утилиту ``curl`` или ``postman``. Но для данного задание написан клиент(client.py). Пример запросов (используем для примера датасет ``Data_Africa.csv``):
-- добавление файла: ``python3 client/client.py post -f Data_Africa.csv``
-- получение списка файлов с информацией о колонках: ``python3 client/client.py get``
+- добавление файла: ```python3 client/client.py post -f Data_Africa.csv```
+- получение списка файлов с информацией о колонках: ```python3 client/client.py get```
 - получения данных из конкретного файла: ``python3 client/client.py get -f Data_Africa.csv``
 - получения данных из файла с каким-то фильтром: ``python3 client/client.py get -f Data_Africa.csv -fi 'Year < 2003' -fi 'Country == "Republic of the Congo"'``
 - получение данных из файла с сортировкой: ``python3 client/client.py get -f Data_Africa.csv -s 'GDP (USD)'``
