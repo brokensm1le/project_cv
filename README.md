@@ -19,28 +19,29 @@
 - Установить [python3](https://www.python.org/download/releases/3.0/)
 - При использовании Visual Studio Code, можно подготовить среду для разработки посредством материалов туториола: https://code.visualstudio.com/docs/python/tutorial-flask
 
-### Запуск приложения
-## Запуск сервера
+## Запуск приложения
+### Запуск сервера
 - ``docker build -t adakimov/db_server . && docker run -p 8000:8000 -it adakimov/db_server``
 
-## Настройка клиента
+### Настройка клиента
 - ``pip install requests``
 - ``pip install argparse``
 
 
-### Работа с сервисом
+## Работа с сервисом
 Для отправки запросов можно использовать утилиту ``curl`` или ``postman``. Но для данного задание написан клиент(client.py). Пример запросов (используем для примера датасет ``Data_Africa.csv``):
-- Добавление файла:
+
+Добавление файла:
   
   ```
   python3 client/client.py post -f Data_Africa.csv
   ```
-- Получение списка файлов с информацией о колонках:
+Получение списка файлов с информацией о колонках:
   
   ```
   python3 client/client.py get
   ```
-- Получения данных из конкретного файла:
+Получения данных из конкретного файла:
   ```
   python3 client/client.py get -f Data_Africa.csv
   ```
